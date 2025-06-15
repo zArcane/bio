@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Dante Lombard - Biografía</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main onclick="startBoot()" style="cursor: pointer;" class="crt">
+    <div id="boot-screen">
+      <p id="boot-line-1" class="hidden">Iniciando DanteOS v1.0...</p>
+      <p id="boot-line-2" class="hidden">Cargando módulos personales █████▒▒▒▒▒</p>
+      <p id="boot-line-3" class="hidden">Estilo cargado</p>
+      <p id="boot-line-4" class="hidden">Acceso concedido - Bienvenido.</p>
+      <p id="boot-line-5" class="hidden">>>> <span class="cursor"></span></p>
+    </div>
+    <audio id="boot-sound" src="computer-beeps.wav" preload="auto"></audio>
+
+  </main>
+
+  <header class="hero">
+    <h1 id="saludo"></h1>
+    <p>Soy <strong>Dante Lombard</strong>. Me apasiona la tecnología, los videojuegos y la escritura.</p>
+  </header>
+
+  <main id="main-content" class="hidden">
+    <section class="flip-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2>Dante Lombard</h2>
+            <p>Desarrollador Web</p>
+          </div>
+          <div class="flip-card-back">
+            <p>🎮 Amante de los videojuegos</p>
+            <p>🧑‍💻 Estudiando programación</p>
+            <p>🌐 Explorando la web</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>🧠 Sobre mí</h2>
+      <p>
+        Soy una persona curiosa y creativa. Me encanta aprender cosas nuevas, y disfruto mucho del proceso de crear.
+        Además de estudiar desarrollo web y escribir historias, <span id="red">también</span> <span id="blue">me</span>
+        <span id="red">encantan</span> <span id="blue">las</span> <span id="red">cartas.</span>
+      </p>
+    </section>
+
+    <section class="tech">
+      <h2>Equipamiento actual</h2>
+      <div class="tech-grid">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">VS Code</div>
+      </div>
+    </section>
+
+    <section class="proyectos">
+      <h2>Proyectos destacados</h2>
+      <div class="proyectos-grid">
+        <div class="proyecto">
+          <h3>
+            <div style="color: #6b458f;">deus_ex_machina</div> E-Commerce
+          </h3>
+          <p>Un startup de un E-Commerce simple sobre servicios digitales.</p>
+          <a href="/ecommerce-website" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="proyecto">
+          <h3 style="color: #6b458f;">Arcsger</h3>
+          <p>Password manager hecho en Python. Almacena las contraseñas encriptadas de forma local.</p>
+          <p class="comingSoon">Próximamente en GitHub.</p>
+          <!-- <a href="#" target="_blank">Ver más.</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- queda mal -->
+    <!-- <section class="space-tech">
+    <h2>Las habilidades me orbitan</h2>
+    <div class="orbital-container">
+      <div class="planet html"><span class="material-symbols-outlined">
+          html
+        </span></div>
+      <div class="planet css">CSS</div>
+      <div class="planet git">Git</div>
+      <div class="planet github">GitHub</div>
+      <div class="planet vscode">VS Code</div>
+      <div class="center-core">🚀</div>
+    </div>
+  </section> -->
+
+    <!-- lo voy a terminar en otro momento, solo falta agregar el texto, el css ya está hecho. -->
+    <!-- <section class="timeline">
+      <h2>Mi recorrido</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <h3>2023</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magni.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2024</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quasi?</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2024</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quasi?</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="missions">
+      <h2>Misiones activas</h2>
+      <ul>
+        <li>Crear un portafolio personal</li>
+        <li>Aprender JavaScript</li>
+        <li>Iniciar un pequeño proyecto</li>
+      </ul>
+    </section>
+
+    <section class="contacto">
+      <h2>🌸 Contacto</h2>
+      <p>¿Querés hablar conmigo? ¡Escribime!</p>
+      <div class="gmail-card">
+        <span>📧</span>
+        <a href="mailto:tuemail@gmail.com">danteagustinlombard@gmail.com</a>
+      </div>
+      <p>o</p>
+      <div class="github-link"><a href="http://github.com/zArcane" target="_blank">Visitame en GitHub</a></div>
+    </section>
+
+    <footer>
+      <p>© 2025 Dante Lombard. Hecho con HTML y CSS.</p>
+      <button class="toggle-btn" onclick="toggleMode()">Cambiar Tema</button>
+    </footer>
+  </main>
+
+  <script>
+    let started = false;
+
+    function startBoot() {
+      if (started) return; // Evita múltiples clics
+      started = true;
+
+      const lines = [
+        "boot-line-1",
+        "boot-line-2",
+        "boot-line-3",
+        "boot-line-4",
+        "boot-line-5"
+      ];
+
+      const sound = document.getElementById("boot-sound");
+      sound.play();
+
+      let delay = 0;
+
+      // Mostrar líneas con delay
+      lines.forEach((id) => {
+        setTimeout(() => {
+          document.getElementById(id).classList.remove("hidden");
+        }, delay);
+        delay += 500;
+      });
+
+      // Fade out de boot y fade in de main
+      setTimeout(() => {
+        const boot = document.getElementById('boot-screen');
+        const main = document.getElementById('main-content');
+
+        // Inicia fade-out
+        boot.classList.add('fade-out');
+
+        // Después de 1 segundo (duración del fade), ocultamos y mostramos
+        setTimeout(() => {
+          boot.classList.add('hidden'); // Oculta completamente
+          main.classList.remove('hidden');
+          main.classList.add('fade-in'); // Muestra con fade-in
+        }, 1000);
+      }, delay + 1000); // Espera a que se muestren todas las líneas
+    }
+  </script>
+
+  <script>
+    // toggle de estilo
+    function toggleMode() {
+      document.body.classList.toggle('alt-mode');
+    }
+  </script>
+
+  <script>
+    const saludo = document.getElementById("saludo");
+    const hora = new Date().getHours();
+    if (hora < 12) saludo.textContent = "🌅 Buenos días";
+    else if (hora < 18) saludo.textContent = "☀️ Buenas tardes";
+    else saludo.textContent = "🌙 Buenas noches";
+  </script>
+</body>
+
+</html>
