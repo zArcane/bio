@@ -704,13 +704,13 @@ footer {
 }
 
 /* responsive */
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
   .mobile-only {
-    display: inline;
+    display: inline !important;
   }
 
   .flip-card-inner {
