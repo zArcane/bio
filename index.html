@@ -15,7 +15,10 @@
   <main onclick="startBoot()" style="cursor: pointer;" class="crt">
     <div id="boot-screen">
       <p id="boot-line-1" class="hidden">Iniciando DanteOS v1.0...</p>
-      <p id="boot-line-2" class="hidden">Cargando módulos personales █████▒▒▒▒▒</p>
+      <p id="boot-line-2" class="hidden">
+        <span class="desktop-only">Cargando módulos personales █████▒▒▒▒▒</span>
+        <span class="mobile-only">Cargando módulos █████▒▒▒▒▒</span>
+      </p>
       <p id="boot-line-3" class="hidden">Estilo cargado</p>
       <p id="boot-line-4" class="hidden">Acceso concedido - Bienvenido.</p>
       <p id="boot-line-5" class="hidden">>>> <span class="cursor"></span></p>

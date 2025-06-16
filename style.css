@@ -27,6 +27,14 @@ body {
   z-index: 9999;
 }
 
+.desktop-only {
+  display: inline;
+}
+
+.mobile-only {
+  display: none;
+}
+
 .hidden {
   display: none !important;
 }
@@ -697,6 +705,14 @@ footer {
 
 /* responsive */
 @media (max-width: 430px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+
   .flip-card-inner {
     display: flex;
     justify-content: center;
