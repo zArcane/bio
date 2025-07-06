@@ -313,7 +313,11 @@ header.hero {
   color: #00ffc2;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+}
+
+.proyecto a:hover {
+  text-decoration: underline;
+  color: #ff6f91;
 }
 
 .proyecto div {
@@ -327,21 +331,10 @@ header.hero {
   text-align: center;
 }
 
-.proyecto .comingSoon {
+/* ya no se usa */
+/* .proyecto .comingSoon {
   color: #00c496;
-}
-
-.proyecto a {
-  color: #00ffc2;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.proyecto a:hover {
-  text-decoration: underline;
-  color: #ff6f91;
-}
-
+} */
 
 /* timeline */
 /* .timeline {

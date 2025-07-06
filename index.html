@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <title>Portafolio de Dante Lombard</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -22,7 +22,7 @@
       <p id="boot-line-4" class="hidden">Acceso concedido - Bienvenido.</p>
       <p id="boot-line-5" class="hidden">>>> <span class="cursor"></span></p>
     </div>
-    <audio id="boot-sound" src="computer-beeps.wav" preload="auto"></audio>
+    <audio id="boot-sound" src="assets/sounds/computer-beeps.wav" preload="auto"></audio>
 
   </main>
 
@@ -75,17 +75,25 @@
             <div style="color: #6b458f;">deus_ex_machina</div> E-Commerce
           </h3>
           <p>Un startup de un E-Commerce simple sobre servicios digitales.</p>
-          <a href="/ecommerce-website" target="_blank">Ver en GitHub</a>
+          <a href="https://deusexmachina.vercel.app/" target="_blank">Ver más</a>
         </div>
         <div class="proyecto">
           <h3 style="color: #6b458f;">Arcsger</h3>
           <p>Password manager hecho en Python. Almacena las contraseñas encriptadas de forma local.</p>
-          <p class="comingSoon">Próximamente en GitHub.</p>
-          <!-- <a href="#" target="_blank">Ver más.</a> -->
+          <a href="https://arcsgerapp.vercel.app" target="_blank">Ver más</a>
         </div>
       </div>
     </section>
+    <section class="proyectos">
+      <div class="proyectos-grid">
+        <div class="proyecto">
+          <h3 style="color: #8a59b7;">HomeTrack</h3>
+          <p>Aplicación hecha para que puedas gestionar todo tu dinero desde un solo lugar.</p>
+          <a href="https://hometrackbeta.vercel.app" target="_blank">Ver más</a>
+        </div>
+      </div>
 
+    </section>
     <!-- queda mal -->
     <!-- <section class="space-tech">
     <h2>Las habilidades me orbitan</h2>
@@ -141,7 +149,7 @@
     </section>
 
     <footer>
-      <p>© 2025 Dante Lombard. Hecho con HTML y CSS.</p>
+      <p>© 2025 Dante Lombard.</p>
       <button class="toggle-btn" onclick="toggleMode()">Cambiar Tema</button>
     </footer>
   </main>
